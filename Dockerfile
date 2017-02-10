@@ -7,5 +7,6 @@ RUN pip3 install telepot
 ADD kantineBot.py /opt/
 
 ENV TZ=Europe/Paris
+ENV LC_ALL=en_US.UTF-8
 
 ENTRYPOINT [ "/opt/kantineBot.py" ]
